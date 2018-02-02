@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View android:background="@drawable/view_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_margin="10.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="串口号:"
+            android:textSize="18sp"/>
+        <Spinner android:entries="@array/serial"
+            android:id="@+id/spinner_serial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="波特率:"
+            android:textSize="18sp"/>
+        <Spinner android:entries="@array/boudrateS"
+            android:id="@+id/spinner_boudrates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="14dip"
+                 >
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据位:"
+            android:textSize="18sp"/>
+        <Spinner android:entries="@array/dataBits"
+            android:id="@+id/spinner_dataBits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dip"
+        >
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止位:"
+            android:textSize="18sp"/>
+        <Spinner android:entries="@array/stopBits"
+            android:id="@+id/spinner_stopBits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="较验位:"
+            android:textSize="18sp"/>
+        <Spinner android:entries="@array/parity"
+            android:id="@+id/spinner_parity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="流控位:"
+            android:textSize="18sp"/>
+        <Spinner android:entries="@array/flowControl"
+            android:id="@+id/spinner_flowControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dip">
+        <View android:background="@drawable/view_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_margin="10.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btFOk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"/>
+        <Button
+            android:id="@+id/btFCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

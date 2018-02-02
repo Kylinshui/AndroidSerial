@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">串口助手</string>
+    <string name="serialinfo">说明:本软件适用于Android4.2以上带otg功能\n\n
+                              1.FTDI FT232无需root,当识别到设备后会弹出对话框api调用的是FTDI d2xx.jar\n
+    2.PL2303HXD 无需root\n
+    3.通用串口指Android 内核自带串口驱动已转成/dev/ttySx或/dev/ttyUSBx之类的并有读写节点的权限.调用android-serialport-api\n
+    </string>
+</resources>

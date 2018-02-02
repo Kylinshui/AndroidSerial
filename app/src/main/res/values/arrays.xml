@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stopBits">
+        <item>1bit</item>
+        <item>2bit</item>
+    </string-array>
+    <string-array name="dataBits">
+        <item>8bit</item>
+        <item>7bit</item>
+    </string-array>
+    <string-array name="parity">
+        <item>none</item>
+        <item>odd</item>
+        <item>even</item>
+        <item>mark</item>
+        <item>space</item>
+    </string-array>
+    <string-array name="flowControl">
+        <item>none</item>
+        <item>flow control</item>
+    </string-array>
+    <string-array name="boudrateS">
+        <item>115200</item>
+        <item>57600</item>
+        <item>38400</item>
+        <item>19200</item>
+        <item>9600</item>
+    </string-array>
+    <string-array name="serial">
+        <item>/dev/ttyUSB0</item>
+        <item>/dev/ttyS0</item>
+        <item>/dev/ttyS1</item>
+        <item>/dev/ttyS2</item>
+        <item>/dev/ttyS3</item>
+        <item>/dev/ttyS4</item>
+        <item>/dev/ttymxc0</item>
+        <item>/dev/ttymxc1</item>
+        <item>/dev/ttymxc2</item>
+        <item>/dev/ttymxc3</item>
+        <item>/dev/ttymxc4</item>
+
+
+    </string-array>
+</resources>

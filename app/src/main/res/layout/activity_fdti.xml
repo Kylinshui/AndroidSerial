@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bshui.androidserial.FdtiActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/tvfdtstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="串口状态:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRecvCount"
+        app:layout_constraintStart_toStartOf="@+id/tvRecvCount"
+        app:layout_constraintTop_toTopOf="@+id/btFtdiSet" />
+
+    <Button
+        android:id="@+id/btFtdiSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="16dp"
+        android:text="参数设置"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRecvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:text="数据接收:0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edRecive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="39dp"
+        android:background="#fffffaf2"
+        android:ems="10"
+        android:gravity="left|center|top"
+        android:hint="接收区"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/checkHex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvRecvCount" />
+
+    <TextView
+        android:id="@+id/tvSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="16dp"
+        android:text="数据发送:0"
+        app:layout_constraintBottom_toTopOf="@+id/edSend"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkHex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hex显示"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edSend"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="50dp"
+        android:background="#fffffaf2"
+        android:ems="10"
+        android:gravity="left|center|top"
+        android:hint="发送区"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkHex" />
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:text="发送"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSend" />
+
+    <Button
+        android:id="@+id/btClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:text="清屏"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edSend" />
+
+    <ToggleButton
+        android:id="@+id/tgbtrecive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:textOff="停止接收"
+        android:textOn="开始接收"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/edSend"
+        app:layout_constraintEnd_toStartOf="@+id/checkHex" />
+
+
+</android.support.constraint.ConstraintLayout>
