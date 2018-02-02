@@ -317,6 +317,7 @@ public class SerialActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         bReadThreadGoing=false;
+        if(mSerialPort!=null)
         mSerialPort.close();
     }
 }
